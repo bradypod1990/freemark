@@ -10,7 +10,6 @@ public class FreemarkerController {
 
 	@RequestMapping("/hello")
 	public String hello(ModelMap map) {
-		System.out.println("hell freemarker");
 		map.addAttribute("name", "zoufeng");
 		map.addAttribute("names", new String[]{"james", "wade", "bosh"});
 		return "/hello.ftl"; 
